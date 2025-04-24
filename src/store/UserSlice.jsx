@@ -8,13 +8,13 @@ const initialState = {
   token: details ? details.token : ''
 };
 
-const userSlice = createSlice({
+const UserSlice = createSlice({
   name: 'user',  // keep lowercase here to avoid confusion
   initialState,
   reducers: {
     setstate: (state, action) => {
       // console.log(action.payload);
-      localStorage.setItem('TaskappAuth', JSON.stringify({ login: true, token: action.payload.token, user: "" }));
+      localStorage.setItem('TaskappAuth', JSON.stringify({ login: true, token: action.payload.token,user: action.payload.user }));
       state.login = true;
       state.token = action.payload.token;
     },
@@ -32,6 +32,6 @@ const userSlice = createSlice({
   }
 });
 
-export const { setstate, updateuser, logout } = userSlice.actions;
+export const { setstate, updateuser, logout } = UserSlice.actions;
 
-export default userSlice.reducer;
+export default UserSlice.reducer;

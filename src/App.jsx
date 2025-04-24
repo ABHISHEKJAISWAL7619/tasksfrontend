@@ -8,7 +8,8 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Provider, useDispatch, useSelector } from 'react-redux'
 import axios from 'axios'
-import { updateuser } from './store/userslice'
+import { updateuser } from './store/Userslice'
+// import { updateuser } from './store/UserSlice'
 // import { store } from './store/store'
 
 const App = () => {

@@ -7,9 +7,9 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 const Addtask = ({allusertasks}) => {
     const userstore  = useSelector((state)=>state.user);
-    // console.log(userstore.user._id)
+    console.log(userstore)
     const  userId = userstore.user._id;
-    // console.log(userId)
+    console.log(userId)
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -42,7 +42,7 @@ const Addtask = ({allusertasks}) => {
             duedate: dateref.current.value,
             userId: userId
         };
-        console.log(obj)
+        console.log(obj.userId)
     
     
        
