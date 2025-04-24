@@ -6,9 +6,10 @@ import Login from './pages/Login'
 import Signup from './pages/Signup'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Provider, useDispatch, useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import axios from 'axios'
-import { updateuser } from './store/Userslice'
+import  {updateuser}  from './store/UserSlice'
+// import { updateuser } from './store/Userslice'
 // import { updateuser } from './store/UserSlice'
 // import { store } from './store/store'
 
